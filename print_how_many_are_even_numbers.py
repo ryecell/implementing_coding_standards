@@ -8,3 +8,5 @@ for num in range(10):
     if num_input % 2 == 0:
         even_counter += 1
 
+#print total number of even numbers
+print(even_counter )
