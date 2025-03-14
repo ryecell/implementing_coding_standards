@@ -1,18 +1,21 @@
 user_list = []
-num_list = []
-unique_list = []
+num_set = set()
+final_num_set = set()
+
 #ask the user for input
 for num in range(10):
     num_input = int(input("Enter num{num}: ".format(num = num+1)))
     user_list.append(num_input)
 
-#filtering duplicates
-for unique_numbers in user_list:
-    if unique_numbers not in num_list:
-        num_list.append(unique_numbers)
+#filtering numbers with duplicates
+for unique_num in user_list:
+    if unique_num not in num_set:
+        num_set.add(unique_num)
+        final_num_set.add(unique_num)
+    else:
+        final_num_set.discard(unique_num)
 
-
-
-print(num_list)
+#print filtered list
+print("The numbers without duplicates are:", list(final_num_set))
 
   
