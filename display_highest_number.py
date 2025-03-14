@@ -11,4 +11,4 @@ while True:
         print("Input invalid. Stopping program...")
         break
 
-print(max(set(user_list)))
+print("Highest number is: ", max(set(user_list)))
