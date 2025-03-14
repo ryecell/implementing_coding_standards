@@ -6,10 +6,13 @@ final_list = []
 # ask user to input 10 numbers
 for num in range(10):
     user_input = int(input("Enter num{num}: ".format(num = num + 1)))
-    user_list.append(user_input)
+    if user_input not in user_list:
+        user_list.append(user_input) # <--- create a list for first entry numbers
     #create a list for duplicates
-    if user_input in user_list:
+    elif user_input in user_list:
         final_list.append(user_input)
     else:
         pass
+
+#print list
 print(final_list)
