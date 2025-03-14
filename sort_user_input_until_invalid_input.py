@@ -10,5 +10,6 @@ while True:
                 
     except ValueError: #check if user input is invalid
         print("User input invalid. Stopping program....")
-        print("The sorted number list is: ", user_list.sort())
+        user_list.sort() #separated sort function to sort list first before printing value of list
+        print("The sorted number list is: ", user_list)
         break
