@@ -1,6 +1,7 @@
-#using while loop to ask user for inputs until input is invalid
+#initialize lists
 user_list = []
-counter_list = []
+
+#using while loop to ask user for inputs until input is invalid
 while True:
     try:
         user_input = int(input("Enter your number: "))
@@ -11,11 +12,7 @@ while True:
         break
 
 #count frequencies    
-for num in user_list:
-    count = user_list.count(num)
-    counter_list.append(count)
+counter = max(set(user_list), key=user_list.count)
     
 # initial counter
-print(str(max(counter_list)))
-
-    
+print(counter)
