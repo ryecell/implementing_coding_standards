@@ -10,3 +10,7 @@ while True:
     except ValueError: #filter if user input is invalid
         print("Input invalid. Stopping program...")
         break
+#sorting list
+user_list.sort(reverse = True)
+#print sorted list
+print(user_list)
